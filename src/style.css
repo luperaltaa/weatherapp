@@ -1,0 +1,55 @@
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 45px;
+}
+
+h2 {
+  position: relative;
+  top: -80px;
+  left: 85%;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+}
+body {
+  margin: 30px 0 auto;
+}
+i {
+  font-size: 25px;
+}
+
+i:hover {
+  transform: scale(2);
+  cursor: pointer;
+}
+.container {
+  max-width: 900px;
+  background: #f1faee;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.row {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  margin-top: -25px;
+}
+.col {
+  text-align: center;
+  width: 100%;
+  font-size: 24px;
+}
+.search {
+  max-width: 40%;
+}
+.input-group-text {
+  font-family: "Poppins", sans-serif;
+  transition: all 100ms ease-in-out;
+}
+.input-group-text:hover {
+  cursor: pointer;
+  background-color: black;
+  color: #f1faee;
+}
+.degrees {
+  font-size: 15px;
+}
