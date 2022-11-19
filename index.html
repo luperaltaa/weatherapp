@@ -15,50 +15,64 @@
       src="https://kit.fontawesome.com/cd9f458813.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
-      <form>
+      <form class="search-form">
         <div class="input-group mb-3 search">
-          <input
-            type="text"
-            class="form-control"
-            placeholder=" enter the city"
-            aria-label="city"
-            aria-describedby="basic-addon2"
-          />
-          <span class="input-group-text" id="basic-addon2">Search</span>
-        </div>
-        <h1>London</h1>
-        <h2>15°C</h2>
-        <div class="row">
-          <div class="col">
-            Sat <br /><i class="fa-solid fa-cloud-rain"></i><br />
-            <div class="degrees">10° <strong> 18°</strong></div>
-          </div>
-          <div class="col">
-            Sun <br /><i class="fa-solid fa-cloud"></i><br />
-            <div class="degrees">11° <strong>17°</strong></div>
-          </div>
-          <div class="col">
-            Mon<br /><i class="fa-solid fa-cloud-rain"></i><br />
-            <div class="degrees">13° 16°</div>
-          </div>
-          <div class="col">
-            Tue <br /><i class="fa-solid fa-cloud-sun"></i><br />
-            <div class="degrees">11° 16°</div>
-          </div>
-          <div class="col">
-            Wed <br /><i class="fa-solid fa-cloud"></i><br />
-            <div class="degrees">10° 17°</div>
+          <div class="input-group">
+            <input
+              type="search"
+              class="form-control"
+              placeholder=" enter the city"
+              autofocus="on"
+              autocomplete="off"
+              aria-label="Dollar amount (with dot and two decimal places)"
+              id="search-text-input"
+            />
+            <input type="submit" value="Search" class="input-group-text" />
+            <span id="current-location" class="input-group-text"
+              ><i class="fa-solid fa-location-crosshairs"></i
+            ></span>
           </div>
         </div>
       </form>
+      <h1>London</h1>
+      <ul>
+        <li id="time">Wednesday 22:00</li>
+        <li id="weather">Partly Cloudy</li>
+      </ul>
+
+      <h2>15 °C</h2>
+      <div class="row">
+        <div class="col">
+          Sat <br /><i class="fa-solid fa-cloud-rain"></i><br />
+          <div class="degrees">10° <strong> 18°</strong></div>
+        </div>
+        <div class="col">
+          Sun <br /><i class="fa-solid fa-cloud"></i><br />
+          <div class="degrees">11° <strong>17°</strong></div>
+        </div>
+        <div class="col">
+          Mon<br /><i class="fa-solid fa-cloud-rain"></i><br />
+          <div class="degrees">13° 16°</div>
+        </div>
+        <div class="col">
+          Tue <br /><i class="fa-solid fa-cloud-sun"></i><br />
+          <div class="degrees">11° 16°</div>
+        </div>
+        <div class="col">
+          Wed <br /><i class="fa-solid fa-cloud"></i><br />
+          <div class="degrees">10° 17°</div>
+        </div>
+      </div>
     </div>
 
     <footer class="footer">
       <a href="https://github.com/luperaltaa/weatherapp">Open-source code</a>
       by Lu Peralta
     </footer>
+    <script src="src/index.js"></script>
   </body>
 </html>
