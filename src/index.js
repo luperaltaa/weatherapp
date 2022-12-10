@@ -21,9 +21,20 @@ function updateTemp(response) {
   // update temp
   let h2 = document.querySelector("h2");
   h2.innerHTML = `${Math.round(response.data.main.temp)}°C`;
-  // update weather
-  let weather = document.querySelector("#weather");
-  weather.innerHTML = response.data.weather[0].main;
+
+  // update humidity
+  let humidity = document.querySelector("#humidity");
+  humidity.innerHTML = `Humidity: ${response.data.main.humidity}%`;
+  // update wind
+  let wind = document.querySelector("#wind");
+  wind.innerHTML = `Wind: ${response.data.wind.speed} km/h`;
+
+  // update icon
+  let icon = document.querySelector(".icon");
+  icon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 
   let now = new Date();
   let time = document.querySelector("#time");

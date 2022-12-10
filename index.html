@@ -19,6 +19,14 @@
   </head>
   <body>
     <div class="container">
+      <div class="float-end">
+        <img
+          class="icon"
+          src="http://openweathermap.org/img/wn/10d@2x.png"
+          alt=""
+        />
+        <h2 class="temperature">-- °C</h2>
+      </div>
       <form class="search-form">
         <div class="input-group mb-3 search">
           <div class="input-group">
@@ -38,32 +46,33 @@
           </div>
         </div>
       </form>
-      <h1>London</h1>
+
+      <h1 class="cityname">--</h1>
       <ul>
-        <li id="time">Wednesday 22:00</li>
-        <li id="weather">Partly Cloudy</li>
+        <li id="time">--</li>
+        <li id="humidity">--</li>
+        <li id="wind">--</li>
       </ul>
 
-      <h2>15 °C</h2>
       <div class="row">
         <div class="col">
-          Sat <br /><i class="fa-solid fa-cloud-rain"></i><br />
+          Sat <br /><i class="forecast-icon fa-solid fa-cloud-rain"></i><br />
           <div class="degrees">10° <strong> 18°</strong></div>
         </div>
         <div class="col">
-          Sun <br /><i class="fa-solid fa-cloud"></i><br />
+          Sun <br /><i class="forecast-icon fa-solid fa-cloud"></i><br />
           <div class="degrees">11° <strong>17°</strong></div>
         </div>
         <div class="col">
-          Mon<br /><i class="fa-solid fa-cloud-rain"></i><br />
+          Mon<br /><i class="forecast-icon fa-solid fa-cloud-rain"></i><br />
           <div class="degrees">13° 16°</div>
         </div>
         <div class="col">
-          Tue <br /><i class="fa-solid fa-cloud-sun"></i><br />
+          Tue <br /><i class="forecast-icon fa-solid fa-cloud-sun"></i><br />
           <div class="degrees">11° 16°</div>
         </div>
         <div class="col">
-          Wed <br /><i class="fa-solid fa-cloud"></i><br />
+          Wed <br /><i class="forecast-icon fa-solid fa-cloud"></i><br />
           <div class="degrees">10° 17°</div>
         </div>
       </div>
