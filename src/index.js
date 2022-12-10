@@ -14,13 +14,14 @@ function updateCity(event) {
 }
 
 function updateTemp(response) {
+  celciusTemperature = response.data.main.temp;
   console.log(response);
   // update h1
   let h1 = document.querySelector("h1");
   h1.innerHTML = `${response.data.name}`;
   // update temp
   let h2 = document.querySelector("h2");
-  h2.innerHTML = `${Math.round(response.data.main.temp)}°C`;
+  h2.innerHTML = `${Math.round(celciusTemperature)}`;
 
   // update humidity
   let humidity = document.querySelector("#humidity");
@@ -60,3 +61,27 @@ function showCurrentPosition() {
 }
 let currentButton = document.querySelector("#current-location");
 currentButton.addEventListener("click", showCurrentPosition);
+
+function convertCelcius(event) {
+  event.preventDefault();
+  celcius.classList.add("selected");
+  fahrenheit.classList.remove("selected");
+  let h2 = document.querySelector("h2");
+  h2.innerHTML = Math.round(celciusTemperature);
+}
+function convertFahrenheit(event) {
+  event.preventDefault();
+  celcius.classList.remove("selected");
+  fahrenheit.classList.add("selected");
+  let fahrenheitTemperature = (celciusTemperature * 9) / 5 + 32;
+  let h2 = document.querySelector("h2");
+  h2.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+let celcius = document.querySelector("#celciusLink");
+celcius.addEventListener("click", convertCelcius);
+
+let fahrenheit = document.querySelector("#fahrenheitLink");
+fahrenheit.addEventListener("click", convertFahrenheit);
+
+let celciusTemperature = null;

@@ -67,3 +67,10 @@ ul {
 
   left: 85%;
 }
+.selected {
+  color: black;
+  text-decoration: none;
+}
+.selected:hover {
+  cursor: default;
+}
