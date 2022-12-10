@@ -19,73 +19,75 @@
   </head>
   <body>
     <div class="container">
-      <div class="float-end">
-        <img
-          class="icon"
-          src="http://openweathermap.org/img/wn/10d@2x.png"
-          alt=""
-        />
-        <h2 class="temperature">--</h2>
-        <span
-          ><a id="celciusLink" class="selected" href="#">°C</a> |
-          <a id="fahrenheitLink" href="#">°F</a></span
-        >
-      </div>
-      <form class="search-form">
-        <div class="input-group mb-3 search">
-          <div class="input-group">
-            <input
-              type="search"
-              class="form-control"
-              placeholder=" enter the city"
-              autofocus="on"
-              autocomplete="off"
-              aria-label="Dollar amount (with dot and two decimal places)"
-              id="search-text-input"
-            />
-            <input type="submit" value="Search" class="input-group-text" />
-            <span id="current-location" class="input-group-text"
-              ><i class="fa-solid fa-location-crosshairs"></i
-            ></span>
+      <div class="container-wrapper">
+        <div class="float-end">
+          <img
+            class="icon"
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+            alt=""
+          />
+          <h2 class="temperature">--</h2>
+          <span
+            ><a id="celciusLink" class="selected" href="#">°C</a> |
+            <a id="fahrenheitLink" href="#">°F</a></span
+          >
+        </div>
+        <form class="search-form">
+          <div class="input-group mb-3 search">
+            <div class="input-group">
+              <input
+                type="search"
+                class="form-control"
+                placeholder=" enter the city"
+                autofocus="on"
+                autocomplete="off"
+                aria-label="Dollar amount (with dot and two decimal places)"
+                id="search-text-input"
+              />
+              <input type="submit" value="Search" class="input-group-text" />
+              <span id="current-location" class="input-group-text"
+                ><i class="fa-solid fa-location-crosshairs"></i
+              ></span>
+            </div>
+          </div>
+        </form>
+
+        <h1 class="cityname">--</h1>
+        <ul>
+          <li id="time">--</li>
+          <li id="humidity">--</li>
+          <li id="wind">--</li>
+        </ul>
+
+        <div class="row">
+          <div class="col">
+            Sat <br /><i class="forecast-icon fa-solid fa-cloud-rain"></i><br />
+            <div class="degrees">10° <strong> 18°</strong></div>
+          </div>
+          <div class="col">
+            Sun <br /><i class="forecast-icon fa-solid fa-cloud"></i><br />
+            <div class="degrees">11° <strong>17°</strong></div>
+          </div>
+          <div class="col">
+            Mon<br /><i class="forecast-icon fa-solid fa-cloud-rain"></i><br />
+            <div class="degrees">13° 16°</div>
+          </div>
+          <div class="col">
+            Tue <br /><i class="forecast-icon fa-solid fa-cloud-sun"></i><br />
+            <div class="degrees">11° 16°</div>
+          </div>
+          <div class="col">
+            Wed <br /><i class="forecast-icon fa-solid fa-cloud"></i><br />
+            <div class="degrees">10° 17°</div>
           </div>
         </div>
-      </form>
-
-      <h1 class="cityname">--</h1>
-      <ul>
-        <li id="time">--</li>
-        <li id="humidity">--</li>
-        <li id="wind">--</li>
-      </ul>
-
-      <div class="row">
-        <div class="col">
-          Sat <br /><i class="forecast-icon fa-solid fa-cloud-rain"></i><br />
-          <div class="degrees">10° <strong> 18°</strong></div>
-        </div>
-        <div class="col">
-          Sun <br /><i class="forecast-icon fa-solid fa-cloud"></i><br />
-          <div class="degrees">11° <strong>17°</strong></div>
-        </div>
-        <div class="col">
-          Mon<br /><i class="forecast-icon fa-solid fa-cloud-rain"></i><br />
-          <div class="degrees">13° 16°</div>
-        </div>
-        <div class="col">
-          Tue <br /><i class="forecast-icon fa-solid fa-cloud-sun"></i><br />
-          <div class="degrees">11° 16°</div>
-        </div>
-        <div class="col">
-          Wed <br /><i class="forecast-icon fa-solid fa-cloud"></i><br />
-          <div class="degrees">10° 17°</div>
-        </div>
+      </div>
+      <div>
+        <a href="https://github.com/luperaltaa/weatherapp">Open-source code</a>
+        by Lu Peralta
       </div>
     </div>
 
-    <footer class="footer">
-      <a href="https://github.com/luperaltaa/weatherapp">Open-source code</a>
-      by Lu Peralta
-    </footer>
     <script src="src/index.js"></script>
   </body>
 </html>

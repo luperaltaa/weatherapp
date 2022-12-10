@@ -23,6 +23,8 @@ ul {
 }
 .container {
   max-width: 900px;
+}
+.container-wrapper {
   background: #f1faee;
   padding: 20px;
   border: 2px solid black;
